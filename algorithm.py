@@ -45,22 +45,6 @@ if __name__ == "__main__":
             net, im, fm = pm4py.discover_petri_net_ilp(BPIC15_4f, activity_key='concept:name',
                                                          case_id_key='case:concept:name',
                                                          timestamp_key='time:timestamp')
-        elif param == "BPIC15_5f":
-            net, im, fm = pm4py.discover_petri_net_ilp(BPIC15_5f, activity_key='concept:name',
-                                                         case_id_key='case:concept:name',
-                                                         timestamp_key='time:timestamp')
-        elif param == "BPIC17_f":
-            net, im, fm = pm4py.discover_petri_net_ilp(BPIC17_f, activity_key='concept:name',
-                                                         case_id_key='case:concept:name',
-                                                         timestamp_key='time:timestamp')
-        elif param == "RTFMP":
-            net, im, fm = pm4py.discover_petri_net_ilp(RTFMP, activity_key='concept:name',
-                                                         case_id_key='case:concept:name',
-                                                         timestamp_key='time:timestamp')
-        elif param == "SEPSIS":
-            net, im, fm = pm4py.discover_petri_net_ilp(SEPSIS, activity_key='concept:name',
-                                                         case_id_key='case:concept:name',
-                                                         timestamp_key='time:timestamp')
 
     else:
         print("没有提供任何命令行参数")
